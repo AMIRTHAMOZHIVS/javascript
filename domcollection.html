@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <title> 
+ DOM document.links() Property 
+ </title> 
+<!-- script to count links --> 
+<script> 
+ function countLinks() { 
+ let links = document.links.length; 
+ document.querySelector(".links").innerHTML =links;  let images = document.images.length;  document.querySelector(".images").innerHTML =images;  let forms = document.forms.length; 
+ document.querySelector(".forms").innerHTML =forms;  } 
+ </script> 
+</head> 
+<body> 
+ <form></form><form></form><form></form><form></form><form></form> <h1>GeeksforGeeks</h1> 
+<h2>Articles:</h2> 
+<ul> 
+ <!-- list of links --> 
+<li><a id="js"href="https://www.geeksforgeeks.org/javascript 
+tutorial/">Javascript-Tutorial</a></li> 
+ <li><a id="python"href="https://www.geeksforgeeks.org/python-programming language/">Python</a></li>
+ <li><a id="cpp"href="https://www.geeksforgeeks.org/c-plus 
+plus/">C++</a></li> 
+ <li><a id="html"href="https://www.geeksforgeeks.org/html-tutorials/">HTML Tutorials</a></li> 
+ </ul> 
+<img ></img> <img ></img><img ></img><img ></img><img ></img>  <!-- button to count number of links --> 
+<button onclick="countLinks()"> 
+ Count links 
+ </button> 
+<br> 
+<br> 
+<span>Total links: </span> 
+<span class="links"></span><br> 
+ <span>Total Images: </span> 
+<span class="images"></span><br> 
+ <span>Total forms: </span> 
+<span class="forms"></span> 
+</body> 
+</html> 

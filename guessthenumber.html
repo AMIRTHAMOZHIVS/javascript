@@ -9,6 +9,24 @@
     <h1>Guess The Number From 1 to 100</h1>
     <input type="number" id="userInput" placeholder="Enter your guess" required>
     <button> Check</button>
+    <p id="result">Your are Wrong!/Right!</p>
+    <script>
+        const button = document.querySelector("button");
+        const input = document.getElementById("userInput");
+        const message = document.getElementById("result");
+        const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+        button.addEventListener("click", function() {
+            const userGuess = Number(input.value);
+            if (userGuess === randomNumber) {
+                message.textContent = "You are Right!";
+                result.textContent = "The correct number was " + randomNumber;
+            } else {
+                message.textContent = "You are Wrong!";
+                result.textContent = "Try again! The correct number was " + randomNumber;
+            }
+        });
+        </script>
 
 </body>
 </html>
